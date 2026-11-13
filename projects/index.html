@@ -1,3 +1,133 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Selected AI and data science projects by Byungchan Hwang."><title>Projects · Byungchan Hwang</title><link rel="stylesheet" href="../style.css"></head><body><a class="skip" href="#content">Skip to content</a><header class="top"><a class="wordmark" href="../home/">Byungchan Hwang</a><nav aria-label="Main navigation"><a href="../home/">Home</a><a href="../experience/">Experience</a><a href="../projects/" aria-current="page">Projects</a><a href="../paper/">Paper</a></nav></header>
-<main class="content-page" id="content"><p class="eyebrow">SELECTED WORK</p><h1>Projects</h1><section class="project-list"><article class="project"><div class="project-index">01 / PROJECT</div><div><h3>Implementing LLM from Scratch</h3><p class="position">Personal project · Jan. 2026 — Present</p><p>Implemented a GPT-style language model in PyTorch with SwiGLU, RoPE, and causal self-attention. Trained on WikiText-2, conducted ablation experiments, and tracked results with W&B.</p><p><a href="https://github.com/HanyangChan/LLM-from-scratch" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p><div class="tags"><span>PyTorch · LLM · W&B</span></div></div></article><article class="project"><div class="project-index">02 / PROJECT</div><div><h3>Speech-to-Text Application</h3><p class="position">Individual project · Feb. — Apr. 2026</p><p>Developed and deployed a full-stack speech-to-text application with payment integration.</p><p><a href="https://noteai.cloud/" target="_blank" rel="noopener noreferrer">Visit application ↗</a></p><div class="tags"><span>Speech-to-Text · Full-stack</span></div></div></article><article class="project"><div class="project-index">03 / PROJECT</div><div><h3>Wildfire Occurrence Prediction</h3><p class="position">Team member & presenter · Mar. — Jun. 2025</p><p>Preprocessed public meteorological data from South Korea and compared Random Forest, XGBoost, LightGBM, and Gradient Boosting using cross-validation for wildfire occurrence prediction.</p><p><a href="https://github.com/HanyangChan/ML1_TermProject" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p><div class="tags"><span>Machine Learning · Public Data</span></div></div></article><article class="project"><div class="project-index">04 / PROJECT</div><div><h3>Handwritten Mathematics to LaTeX</h3><p class="position">Team leader · Mar. — Jun. 2025</p><p>Implemented Transformer-based OCR to convert handwritten mathematical expressions into LaTeX. Compared and selected compact, efficient models from Hugging Face.</p><p><a href="https://github.com/HanyangChan/Easy-to-use-OCR-Handwritten-Mathmatics" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p><div class="tags"><span>Transformer · OCR</span></div></div></article></section><footer><span>Inspired by <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener noreferrer">academic-homepage</a>.</span></footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected AI and data science projects by Byungchan Hwang.">
+  <title>Projects · Byungchan Hwang</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top">
+    <a class="wordmark" href="../home/">Byungchan Hwang</a>
+    <nav aria-label="Main navigation">
+      <a href="../home/">Home</a>
+      <a href="../experience/">Experience</a>
+      <a href="../projects/" aria-current="page">Projects</a>
+      <a href="../paper/">Paper</a>
+    </nav>
+  </header>
+  <main class="content-page projects-page" id="content">
+    <p class="eyebrow">SELECTED WORK</p>
+    <h1>Projects</h1>
+    <section class="project-list">
+      <article class="project">
+        <div class="project-index">01 / PROJECT</div>
+        <div>
+          <h3>Agent Memory Manager: Robust Long-Term Memory for LLM Agents</h3>
+          <p class="position">Team project · Sep. 2026 — Present</p>
+          <p>Designed an adaptive long-term memory framework for LLM agents that handles memory staleness, contradiction resolution, and constraint preservation. The pipeline supports CREATE, UPDATE, MERGE, and FORGET operations with temporal version tracking.</p>
+          <p>Built a benchmark for retrieval and temporal consistency across context budgets, history lengths, and noise levels, with metrics for temporal version accuracy, target hit rate, task success, and constraint violations.</p>
+          <div class="tags"><span>LLM Agents · Long-Term Memory · Evaluation</span></div>
+        </div>
+      </article>
+
+      <article class="project project-featured">
+        <div class="project-index">02 / PROJECT</div>
+        <div>
+          <h3>Adaptive Fair Diffusion: Improving the Fairness–Quality Trade-off</h3>
+          <p class="position">Personal project · Jun. 2026</p>
+          <p>Extended Fair Diffusion with step-aware guidance and latent-space adaptive control. Orthogonal projection preserves prompt semantics, while conflict-aware dynamic weighting improves fairness only when guidance directions disagree.</p>
+          <p>Adaptive Orthogonal retained a CLIP score of 29.45, while Adaptive Dynamic Weight achieved the strongest optimized fairness score of 0.364.</p>
+          <p><a href="https://github.com/HanyangChan/adaptivefairdiffusion" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+          <div class="tags"><span>Diffusion · Fairness · PyTorch · CLIP</span></div>
+          <div class="project-media">
+            <figure class="media-wide">
+              <img src="../assets/projects/fair-diffusion-tradeoff.webp" loading="lazy" alt="Quality and fairness trade-off across diffusion guidance methods">
+              <figcaption>Quality–fairness trade-off across baseline and adaptive guidance methods.</figcaption>
+            </figure>
+            <div class="media-grid">
+              <figure>
+                <img src="../assets/projects/fair-diffusion-doctor.webp" loading="lazy" alt="Generated doctor images comparing no guidance, Fair Diffusion, and adaptive methods">
+                <figcaption>“A portrait of a doctor” — qualitative comparison.</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/projects/fair-diffusion-nurse.webp" loading="lazy" alt="Generated nurse images comparing no guidance, Fair Diffusion, and adaptive methods">
+                <figcaption>“A photo of a nurse” — qualitative comparison.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project-featured">
+        <div class="project-index">03 / PROJECT</div>
+        <div>
+          <h3>Autonomous Driving Application with 3D Scene Understanding using LangSplat</h3>
+          <p class="position">Personal project · Jul. 2026</p>
+          <p>Built a LangSplat-based open-vocabulary 3D scene understanding pipeline using language-embedded Gaussian representations. Integrated driving images, CLIP-based feature extraction, text-guided localization, semantic segmentation, and a monitoring interface for model training and results.</p>
+          <p><a href="https://github.com/HanyangChan/langsplat_os" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+          <div class="tags"><span>3D Gaussian Splatting · CLIP · Open Vocabulary</span></div>
+          <div class="project-media media-grid">
+            <figure>
+              <img src="../assets/projects/langsplat-driving-original-site.gif" loading="lazy" alt="Animated 3D Gaussian Splatting reconstruction of a driving scene">
+              <figcaption>Original 3D Gaussian Splatting reconstruction.</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/projects/langsplat-driving-car-site.gif" loading="lazy" alt="Animated LangSplat semantic localization result for the car query">
+              <figcaption>Semantic localization for the “car” query.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">04 / PROJECT</div>
+        <div>
+          <h3>Implementing LLM from Scratch</h3>
+          <p class="position">Personal project · Jan. 2026 — Present</p>
+          <p>Implemented a GPT-style language model in PyTorch with SwiGLU, RoPE, and causal self-attention on top of a GPT-2 architecture. Trained on WikiText-2, ran systematic ablations, and tracked loss, perplexity, learning rate, and generated samples with W&amp;B.</p>
+          <p><a href="https://github.com/HanyangChan/LLM-from-scratch" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+          <div class="tags"><span>PyTorch · LLM · W&amp;B</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">05 / PROJECT</div>
+        <div>
+          <h3>Speech-to-Text Application</h3>
+          <p class="position">Personal project · Feb. — Apr. 2026</p>
+          <p>Developed and deployed a full-stack speech-to-text application with production deployment and payment integration.</p>
+          <p><a href="https://noteai.cloud/" target="_blank" rel="noopener noreferrer">Visit application ↗</a></p>
+          <div class="tags"><span>Speech-to-Text · Full-stack</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">06 / PROJECT</div>
+        <div>
+          <h3>Wildfire Occurrence Prediction</h3>
+          <p class="position">Team member &amp; presenter · Mar. — Jun. 2025</p>
+          <p>Preprocessed public meteorological data from South Korea and compared Random Forest, XGBoost, LightGBM, and Gradient Boosting using cross-validation for wildfire occurrence prediction.</p>
+          <p><a href="https://github.com/HanyangChan/ML1_TermProject" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+          <div class="tags"><span>Machine Learning · Public Data</span></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-index">07 / PROJECT</div>
+        <div>
+          <h3>Handwritten Mathematics to LaTeX</h3>
+          <p class="position">Team leader · Mar. — Jun. 2025</p>
+          <p>Implemented Transformer-based OCR to convert handwritten mathematical expressions into LaTeX. Compared compact Hugging Face models and built image preprocessing for efficient inference.</p>
+          <p><a href="https://github.com/HanyangChan/Easy-to-use-OCR-Handwritten-Mathmatics" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></p>
+          <div class="tags"><span>Transformer · OCR</span></div>
+        </div>
+      </article>
+    </section>
+    <footer><span>Inspired by <a href="https://github.com/luost26/academic-homepage" target="_blank" rel="noopener noreferrer">academic-homepage</a>.</span></footer>
+  </main>
+</body>
+</html>
 
